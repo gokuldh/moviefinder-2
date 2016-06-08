@@ -9,7 +9,7 @@ public class RetrofitAdapter {
 
     private final static String BASE_URL = "http://api.themoviedb.org/3/";
 
-    private final static String API_KEY = "6d719c665708dd893bf43660551867a8";
+    private final static String API_KEY = "API KEY HERE";
 
     private static RestAdapter mRestAdapter;
 
