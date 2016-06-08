@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_width="360dp">
+
+            <ImageView
+                android:id="@+id/backdrop_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/detail_backdrop_height"
+                android:alpha="0.9"
+                android:background="@color/primary"
+                android:contentDescription="@string/desc_movie_poster"
+                android:scaleType="centerCrop"
+                android:src="@drawable/movie_placeholder" />
+
+            <ImageView
+                android:id="@+id/poster_image_view"
+                android:layout_width="@dimen/details_poster_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginLeft="@dimen/details_poster_margin"
+                android:contentDescription="@string/desc_movie_backdrop"
+                android:scaleType="fitCenter"
+                android:src="@drawable/movie_placeholder" />
+
+            <include
+                layout="@layout/movie_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/backdrop_image_view" />
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/favorite_action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:clickable="true"
+        android:src="@drawable/ic_action_favorite"
+        app:elevation="8dp"
+        app:layout_anchor="@id/nested_scroll_view"
+        app:layout_anchorGravity="bottom|right|end" />
+</android.support.design.widget.CoordinatorLayout>

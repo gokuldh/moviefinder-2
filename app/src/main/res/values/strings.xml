@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Movie Finder</string>
+    <string name="action_sort_order">Sort Order</string>
+    <string name="loading_error">Ooops, couldn\'t load it.</string>
+    <string name="retry">Retry</string>
+    <string name="sort_popularity">Popularity</string>
+    <string name="sort_rating">Rating</string>
+    <string name="sort_favorites">Favorites</string>
+    <string name="label_details">Movie Details</string>
+    <string name="overview">Overview</string>
+    <string name="trailers">Trailers</string>
+    <string name="reviews">Reviews</string>
+    <string name="empty_overview">No overview available.</string>
+    <string name="empty_trailers">No trailers available.</string>
+    <string name="empty_reviews">No reviews available.</string>
+    <string name="favorite_added">Added to favorites</string>
+    <string name="favorite_removed">Removed from favorites</string>
+    <string name="favorite_undo">Undo</string>
+    <string name="action_share">Share</string>
+    <string name="share_text" formatted="false">Check out %s trailer: %s</string>
+    <string name="share_title">Share movie trailer</string>
+    <string name="empty_favorites">Your favorites list is empty</string>
+
+    <!-- Content descriptions -->
+    <string name="desc_movie_poster">Movie poster</string>
+    <string name="desc_movie_backdrop">Movie backdrop</string>
+    <string name="desc_user_avatar">Review author avatar</string>
+
+    <!-- Non-translatable strings -->
+    <string name="prefs_sort_order" translatable="false">sort_order</string>
+    <string name="sort_order_popularity" translatable="false">popularity.desc</string>
+    <string name="sort_order_rating" translatable="false">vote_average.desc</string>
+    <string name="sort_order_favorites" translatable="false">favorites</string>
+    <string name="prefs_favorites" translatable="false">favorites_list</string>
+</resources>

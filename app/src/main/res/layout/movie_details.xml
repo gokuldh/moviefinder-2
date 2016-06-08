@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/rating_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/margin_small"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/text_color"
+            tools:ignore="RtlHardcoded"
+            tools:text="9.9" />
+
+        <TextView
+            android:id="@+id/date_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/margin_small"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/text_color"
+            tools:ignore="RtlHardcoded"
+            tools:text="20/06/1991" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/overview"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/accent" />
+
+    <TextView
+        android:id="@+id/overview_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/margin_medium"
+        android:visibility="gone"
+        tools:text="Here movie overview goes" />
+
+    <TextView
+        android:id="@+id/empty_overview_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/margin_medium"
+        android:text="@string/empty_overview" />
+
+    <!-- here goes trailer section-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/trailers"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/accent" />
+
+    <LinearLayout
+        android:id="@+id/trailers_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/margin_medium"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/empty_trailers_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/margin_medium"
+        android:text="@string/empty_trailers" />
+
+    <!-- here goes review section -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/margin_tiny"
+        android:text="@string/reviews"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/accent" />
+
+    <LinearLayout
+        android:id="@+id/reviews_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/margin_medium"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/empty_reviews_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/margin_medium"
+        android:text="@string/empty_reviews" />
+</LinearLayout>
